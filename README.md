@@ -12,6 +12,12 @@
 
 *Developer-oriented documentation can be published on GitHub, but all product documentation must be published on <https://docs.oracle.com>*
 
+### APEX Technical Reference
+
+* [APEX - Architecture](https://apex.oracle.com/en/platform/architecture/)
+* [APEX - Deployment](https://apex.oracle.com/en/platform/deployment/)
+* [Understanding the Oracle APEX Application Development Lifecycle](https://www.oracle.com/a/tech/docs/apex-lifecycle-management-v3.pdf)"
+
 ## Examples
 
 *Describe any included examples or provide a link to a demo/tutorial*
@@ -25,6 +31,8 @@
 *If your project has specific contribution requirements, update the CONTRIBUTING.md file to ensure those requirements are clearly explained*
 
 This project welcomes contributions from the community. Before submitting a pull request, please [review our contribution guide](./CONTRIBUTING.md)
+
+Please, review the [APEX documentation](#apex-technical-reference) to meet the development standards.
 
 ## Security
 
