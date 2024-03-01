@@ -1,0 +1,1 @@
+** This document offers an introduction to using the APEX application from an end user's perspective. Explain how to browse through the application's pages and reports. **

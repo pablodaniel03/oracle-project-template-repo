@@ -1,0 +1,1 @@
+** This document describes how to configure external integrations, such as SSO or OAuth Clients for ReST integrations. **

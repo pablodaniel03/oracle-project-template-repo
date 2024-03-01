@@ -1,0 +1,1 @@
+** This document serves as a guide for undersanding the application access configuration. Describes your security design, level of access and **

@@ -1,0 +1,1 @@
+** This document describes how to install the application in an Oracle APEX workspace. **
