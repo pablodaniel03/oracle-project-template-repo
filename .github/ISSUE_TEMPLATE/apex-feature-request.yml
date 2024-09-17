@@ -1,0 +1,94 @@
+---
+name: "Feature Request"
+description: "Submit a request for a new feature or enhancement."
+title: "[Feature] "
+labels: 
+  - enhancement
+body:
+  - type: dropdown
+    id: application_id
+    attributes:
+      label: "Application ID"
+      description: "Enter the APEX Application where the issue occurred."
+      options:
+        - security-tool
+        - ext-integration
+    validations:
+      required: true
+    
+  - type: input
+    id: application_page
+    attributes:
+      label: "Application Page"
+      description: "Enter the APEX page number where the issue occurred."
+      placeholder: "e.g., 12 or '/custom-roles'"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "----"
+
+  - type: textarea
+    id: feature_summary
+    attributes:
+      label: "Feature Summary"
+      description: "Describe the feature you'd like to see in detail."
+      placeholder: "Provide a detailed description of the requested feature."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "Does this request relate to a specific situation or process? Explain the problem or use case that this feature would address."
+      placeholder: "What problem are you facing or what are you trying to accomplish?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: "Proposed Solution"
+      description: "If you have an idea for how to solve the problem, describe it here."
+      placeholder: "How would this feature work? Describe your proposed solution."
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternative Solutions"
+      description: "Provide a description of alternative solutions or features considered, or workarounds used."
+      placeholder: "List any alternatives or workarounds you've considered."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority Level"
+      description: "How urgent or critical is this feature for your work?"
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "----"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Provide any other information that might be useful."
+      placeholder: "Any other details, screenshots, or examples."
+    validations:
+      required: false
+
+---

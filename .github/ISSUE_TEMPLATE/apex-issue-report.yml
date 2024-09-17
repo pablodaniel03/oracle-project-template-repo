@@ -1,0 +1,140 @@
+---
+name: Bug Report
+description: Submit an issue related to an Oracle APEX application.
+title: "[Issue] "
+labels: 
+  - bug
+body:     
+  - type: dropdown
+    id: application_id
+    attributes:
+      label: "Application ID"
+      description: "Enter the APEX Application where the issue occurred."
+      options:
+        - security-tool
+        - ext-integration
+    validations:
+      required: false
+    
+  - type: input
+    id: application_page
+    attributes:
+      label: "Application Page"
+      description: "Enter the APEX page number where the issue occurred."
+      placeholder: "e.g., 12 or '/custom-roles'"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "----"
+      
+  - type: markdown
+    attributes:
+      value: "### Issue Description"
+
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Current Behavior
+      description: "Provide a clear and concise description of the issue."
+      placeholder: "e.g., When I try to save the form, I get an error message."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: "Describe what you expected to happen."
+      placeholder: "e.g., The form is submitted when I click the Save button, I get a success message."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Steps to Reproduce"
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Instructions
+      description: "Provide unambiguous step-by-step instructions to reproduce the issue including screen shots and code snippets if appropriate."
+      placeholder: "1. Go to page...\n2. Click on...\n3. See error."
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_users
+    attributes:
+      label: Who is affected
+      description: "Describe who/what is affected by the issue."
+      placeholder: "e.g., The Audit users who create the security rules."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "What were you trying to accomplish when the issue occurred. Does the issue only occur under certain conditions, or at certain times of day, and so forth."
+      placeholder: "e.g,. I was trying to create a custom security rule using the External Integration plugin when..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "----"
+
+  - type: markdown
+    attributes:
+      value: "### Environment Details"
+
+  - type: input
+    id: apex_version
+    attributes:
+      label: "APEX Version"
+      description: "Provide the version of Oracle APEX."
+      placeholder: "e.g., 23.0.1"
+    validations:
+      required: false
+
+  - type: input
+    id: database_version
+    attributes:
+      label: "Database Version"
+      description: "Provide the version of Oracle Database."
+      placeholder: "e.g., 23ai"
+    validations:
+      required: false
+
+  - type: input
+    id: application_version
+    attributes:
+      label: "APEX Application Version"
+      description: "Provide the version of the APEX Application."
+      placeholder: "e.g., 2.0.0.1"
+    validations:
+      required: true
+
+  - type: input
+    id: browser_version
+    attributes:
+      label: Web Browser
+      description: "Specify the browser and version used."
+      placeholder: "e.g., Chrome 105"
+
+  - type: markdown
+    attributes:
+      value: "----"
+      
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: "Provide any other information that might be useful."
+      placeholder: "Any other details, screenshots, or examples."
+    validations:
+      required: false
+
+---
