@@ -175,22 +175,22 @@ $ git branch -d release-1.2
 
 #### Hotfix Branches
 
-May branch off from:
-master
-Must merge back into:
-develop and master
-Branch naming convention:
-hotfix-*
-Hotfix branches are very much like release branches in that they are also meant to prepare for a new production release, albeit unplanned. They arise from the necessity to act immediately upon an undesired state of a live production version. When a critical bug in a production version must be resolved immediately, a hotfix branch may be branched off from the corresponding tag on the master branch that marks the production version.
+- May branch off from: `main`
+
+- Must merge back into: `develop` and `main`
+
+- Branch naming convention: `hotfix-*`
+
+Hotfix branches are very much like release branches in that they are also meant to prepare for a new production release, albeit unplanned. They arise from the necessity to act immediately upon an undesired state of a live production version. When a critical bug in a production version must be resolved immediately, a hotfix branch may be branched off from the corresponding tag on the `main` branch that marks the production version.
 
 The essence is that work of team members (on the develop branch) can continue, while another person is preparing a quick production fix.
 
 ##### Creating the hotfix branch
 
-Hotfix branches are created from the master branch. For example, say version 1.2 is the current production release running live and causing troubles due to a severe bug. But changes on develop are yet unstable. We may then branch off a hotfix branch and start fixing the problem:
+Hotfix branches are created from the `main` branch. For example, say version 1.2 is the current production release running live and causing troubles due to a severe bug. But changes on develop are yet unstable. We may then branch off a hotfix branch and start fixing the problem:
 
 ```shell
-$ git checkout -b hotfix-1.2.1 master
+$ git checkout -b hotfix-1.2.1 main
 #  > Switched to a new branch "hotfix-1.2.1"
 $ ./bump-version.sh 1.2.1
 #  > Files modified successfully, version bumped to 1.2.1.
